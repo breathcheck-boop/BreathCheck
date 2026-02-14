@@ -1,17 +1,25 @@
-# Build outputs
-build/
-dist/
+# Default: ignore everything in repo root for docs-only website commits.
+*
 
-# Environment and local secrets
+# Allow these paths to be tracked.
+!/.gitignore
+!/README.md
+!/docs/
+!/docs/**
+
+# Explicit project ignores (for clarity).
+src/
+*.txt
+*.toml
+
+# Local/dev artifacts (explicit safety ignores).
 .env
 .venv/
-
-# Databases and logs
 *.db
 *.sqlite
 *.log
-
-# Python cache
 __pycache__/
 pycache/
 *.py[cod]
+build/
+dist/
