@@ -1,30 +1,33 @@
+const DOWNLOAD_URL = "https://github.com/breathcheck-boop/BreathCheck";
+const ASSET_VERSION = "v=20260214";
+
 const slides = [
   {
-    src: "assets/module1/step1.webp",
+    src: `./assets/module1/step1.png?${ASSET_VERSION}`,
     caption: "Step 1: Welcome + Orientation",
   },
   {
-    src: "assets/module1/step2.webp",
+    src: `./assets/module1/step2.png?${ASSET_VERSION}`,
     caption: "Step 2: Anxiety Basics",
   },
   {
-    src: "assets/module1/step3.webp",
+    src: `./assets/module1/step3.png?${ASSET_VERSION}`,
     caption: "Step 3: Fight-or-Flight",
   },
   {
-    src: "assets/module1/step4.webp",
+    src: `./assets/module1/step4.png?${ASSET_VERSION}`,
     caption: "Step 4: Worry Cycle",
   },
   {
-    src: "assets/module1/step5.webp",
+    src: `./assets/module1/step5.png?${ASSET_VERSION}`,
     caption: "Step 5: Concern vs Worry",
   },
   {
-    src: "assets/module1/step6.webp",
+    src: `./assets/module1/step6.png?${ASSET_VERSION}`,
     caption: "Step 6: Domains",
   },
   {
-    src: "assets/module1/step7.webp",
+    src: `./assets/module1/step7.png?${ASSET_VERSION}`,
     caption: "Step 7: Values to Habits",
   },
 ];
@@ -34,6 +37,11 @@ const slideCaption = document.getElementById("slideCaption");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const dotsHost = document.getElementById("dots");
+const downloadLink = document.getElementById("downloadLink");
+
+if (downloadLink) {
+  downloadLink.href = DOWNLOAD_URL;
+}
 
 let current = 0;
 

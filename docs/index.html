@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BreathCheck Showcase</title>
   <meta name="description" content="BreathCheck app showcase: local-first anxiety self-help with guided modules, practical tools, and progress tracking." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20260214" />
 </head>
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
-        <img src="assets/logo.webp" alt="BreathCheck logo" class="brand-logo" />
+        <img src="./assets/logo.png?v=20260214" alt="BreathCheck logo" class="brand-logo" />
         <div>
           <h1>BreathCheck</h1>
           <p class="muted">A local-first CBT-inspired anxiety support app</p>
@@ -43,6 +43,7 @@
             <span>Progress milestones</span>
           </div>
           <a
+            id="downloadLink"
             class="download-btn"
             href="https://github.com/breathcheck-boop/BreathCheck"
             target="_blank"
@@ -57,7 +58,7 @@
           <p class="muted">Step images currently bundled in the app resources.</p>
           <div class="carousel" id="carousel">
             <button class="carousel-btn" id="prevBtn" aria-label="Previous slide">&lt;</button>
-            <img id="slideImage" src="assets/module1/step1.webp" alt="Module 1 preview" />
+            <img id="slideImage" src="./assets/module1/step1.png?v=20260214" alt="Module 1 preview" />
             <button class="carousel-btn" id="nextBtn" aria-label="Next slide">&gt;</button>
           </div>
           <div class="dots" id="dots"></div>
@@ -99,7 +100,7 @@
         <h2 class="section-title">Practical Tools</h2>
         <div class="grid cols-2">
           <article class="card tool">
-            <img src="assets/tools/grounding.webp" alt="BreathCheck tool visual" class="tool-image" />
+            <img src="./assets/tools/grounding.png?v=20260214" alt="BreathCheck tool visual" class="tool-image" />
             <h3>BreathCheck Tool</h3>
             <p>Adjust pace and duration, run sessions, and log usage details for progress tracking.</p>
             <ul>
@@ -109,7 +110,7 @@
             </ul>
           </article>
           <article class="card tool">
-            <img src="assets/tools/thought_log.webp" alt="Thought log visual" class="tool-image" />
+            <img src="./assets/tools/thought_log.png?v=20260214" alt="Thought log visual" class="tool-image" />
             <h3>Thought Log</h3>
             <p>Capture situation, thought, emotion intensity, balanced thought, and re-rate.</p>
             <ul>
@@ -126,10 +127,10 @@
       <div class="container">
         <h2 class="section-title">Progress and Milestones</h2>
         <div class="grid cols-4">
-          <article class="card badge"><img src="assets/milestones/1.webp" alt="Milestone 1" /><p>First streak</p></article>
-          <article class="card badge"><img src="assets/milestones/2.webp" alt="Milestone 2" /><p>Module completion</p></article>
-          <article class="card badge"><img src="assets/milestones/5.webp" alt="Milestone 5" /><p>Values anchor</p></article>
-          <article class="card badge"><img src="assets/milestones/8.webp" alt="Milestone 8" /><p>Consistency growth</p></article>
+          <article class="card badge"><img src="./assets/milestones/1.png?v=20260214" alt="Milestone 1" /><p>First streak</p></article>
+          <article class="card badge"><img src="./assets/milestones/2.png?v=20260214" alt="Milestone 2" /><p>Module completion</p></article>
+          <article class="card badge"><img src="./assets/milestones/5.png?v=20260214" alt="Milestone 5" /><p>Values anchor</p></article>
+          <article class="card badge"><img src="./assets/milestones/8.png?v=20260214" alt="Milestone 8" /><p>Consistency growth</p></article>
         </div>
       </div>
     </section>
@@ -157,6 +158,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260214"></script>
 </body>
 </html>
