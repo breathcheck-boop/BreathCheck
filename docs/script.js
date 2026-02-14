@@ -1,30 +1,30 @@
 const slides = [
   {
-    src: "../src/anxiety_app/ui/resources/modules/module_1/images/step_1/m1_p1.webp",
+    src: "assets/module1/step1.webp",
     caption: "Step 1: Welcome + Orientation",
   },
   {
-    src: "../src/anxiety_app/ui/resources/modules/module_1/images/step_2/m1_p2.webp",
+    src: "assets/module1/step2.webp",
     caption: "Step 2: Anxiety Basics",
   },
   {
-    src: "../src/anxiety_app/ui/resources/modules/module_1/images/step_3/m1_p3.webp",
+    src: "assets/module1/step3.webp",
     caption: "Step 3: Fight-or-Flight",
   },
   {
-    src: "../src/anxiety_app/ui/resources/modules/module_1/images/step_4/m1_p4.webp",
+    src: "assets/module1/step4.webp",
     caption: "Step 4: Worry Cycle",
   },
   {
-    src: "../src/anxiety_app/ui/resources/modules/module_1/images/step_5/m1_p5.webp",
+    src: "assets/module1/step5.webp",
     caption: "Step 5: Concern vs Worry",
   },
   {
-    src: "../src/anxiety_app/ui/resources/modules/module_1/images/step_6/m1_p6.webp",
+    src: "assets/module1/step6.webp",
     caption: "Step 6: Domains",
   },
   {
-    src: "../src/anxiety_app/ui/resources/modules/module_1/images/step_7/m1_p7.webp",
+    src: "assets/module1/step7.webp",
     caption: "Step 7: Values to Habits",
   },
 ];
