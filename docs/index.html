@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BreathCheck is a CBT-based desktop application designed to help people understand and manage anxiety and worry." />
+  <title>BreathCheck</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="kicker">BreathCheck</p>
+        <h1>BreathCheck</h1>
+        <p class="subtitle">A CBT-based desktop application designed to help you understand and manage anxiety and worry.</p>
+        <button class="button-primary" disabled aria-disabled="true">Download coming soon</button>
+      </div>
+      <div class="logo-placeholder" role="img" aria-label="BreathCheck logo placeholder">
+        <span>Logo placeholder</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About BreathCheck</h2>
+        <div class="card about-card">
+          <p>BreathCheck is a desktop self-help application focused on practical anxiety support. It is designed to keep the experience structured, calm, and easy to follow.</p>
+          <p>The app uses guided CBT learning modules, thought logging, progress tracking, and supportive coping tools to help users build consistent habits over time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="grid features-grid">
+          <article class="card feature-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>LEARN</h3>
+            <p>Structured CBT learning modules.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>TOOLS</h3>
+            <p>Breathing support and thought log.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>PROGRESS</h3>
+            <p>Track improvement and streaks.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>SUPPORT</h3>
+            <p>Access support information and resources.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preview">
+      <div class="container">
+        <h2>Application Preview</h2>
+        <div class="grid preview-grid">
+          <div class="preview-box">
+            <span>Dashboard preview</span>
+          </div>
+          <div class="preview-box">
+            <span>Learning module preview</span>
+          </div>
+          <div class="preview-box">
+            <span>Thought log preview</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="disclaimer">
+      <div class="container">
+        <div class="card disclaimer-card">
+          <p>BreathCheck is a self-help support tool and not a substitute for professional medical or psychological treatment.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>BreathCheck &copy; <span id="current-year"></span></p>
+      <p>Built with Python and Qt</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+Metadata-Version: 2.4
+Name: anxiety-app
+Version: 0.1.0
+Summary: Self-help mental health desktop app focused on anxiety and worry management.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5>=5.15
+Requires-Dist: SQLAlchemy>=2.0
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: keyring>=24.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: platformdirs>=4.0
+Requires-Dist: cryptography>=42.0
+Requires-Dist: openpyxl>=3.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-qt>=4.2; extra == "dev"
+Requires-Dist: mypy>=1.5; extra == "dev"
+Requires-Dist: ruff>=0.3; extra == "dev"
+Requires-Dist: black>=24.0; extra == "dev"
+
+# BreathCheck
+
+BreathCheck is a local‑first, privacy‑respecting desktop app for anxiety and worry support. It combines CBT‑style learning, daily tracking, and guided tools, with optional AI‑generated insights. Built with PyQt5, SQLAlchemy, and clean architecture.
+
+---
+
+## What the app does
+
+### Home
+- Quick overview of the app and what you can do
+- Keyboard shortcuts list
+- Start button that jumps into Learn
+
+### Learn (CBT program)
+- 10 modules are listed; **Module 1 is fully implemented**, Modules 2–10 are placeholders and are **locked until the previous module is completed**
+- Module 1 is a guided 7‑step flow with progress tracking, saved inputs, and optional media placeholders
+
+**Module list**
+1. Orientation & Goals *(full)*
+2. Mapping Your Anxiety Cycle *(placeholder)*
+3. Tracking Worry Patterns *(placeholder)*
+4. Thinking Traps & Balanced Thoughts *(placeholder)*
+5. Reducing Avoidance (Exposure Basics) *(placeholder)*
+6. Worry Scheduling & Attention Shifting *(placeholder)*
+7. Calming the Body (Breathing, Relaxation, Grounding) *(placeholder)*
+8. Problem-Solving vs Rumination *(placeholder)*
+9. Lifestyle & Habit Support *(placeholder)*
+10. Consolidation & Relapse Plan *(placeholder)*
+
+### Track (daily check‑ins)
+- Mood / Anxiety / Stress sliders (0–10)
+- Notes/trigger input
+- **One entry per day** (with confirmation if you overwrite)
+- Recent entries in card grid with vertical bars + notes
+
+### Insights (optional AI)
+- Line chart from tracker data with filters
+- AI insights generated from:
+  - tracker logs
+  - module inputs
+  - tool entries
+- Cached insights are shown on next app start
+
+### Tools (guided exercises)
+- Breathing exercise (visual pacing)
+- Grounding 5‑4‑3‑2‑1
+- Thought Log
+- Worry Time
+- Safe Place visualization
+- Each tool supports:
+  - multi‑step guided inputs
+  - history of past entries
+  - optional immediate AI feedback (if key is configured)
+
+### Progress
+- Program completion bar
+- Tracking streaks with tier indicators
+- Milestone cards with images (local)
+
+### About
+- App overview, privacy details, and shortcuts
+- Send feedback button
+
+### Contact (Philippines)
+- Curated list of local organizations and resources
+
+### Settings
+- Change master password
+- Delete all data (local)
+- Delete account (clears data + removes master password)
+- Export all data (JSON / CSV / Excel)
+- Light/Dark theme, comfort mode, font size controls
+
+### Toast notifications
+- Saves, deletions, module completion, milestones, and tool submissions surface in‑app toasts
+
+---
+
+## Security & privacy
+
+- **Local‑first**: all user data is stored locally in SQLite.
+- **Master password**: stored as a salted hash in the OS keyring (no recovery flow).
+- **Encryption at rest**: sensitive fields are encrypted locally using a key stored in the OS keyring.
+- **API key (optional)**: stored in `.env` or the OS keyring.
+- No network calls happen unless you explicitly enable AI insights/feedback.
+
+---
+
+## Data storage location
+
+BreathCheck uses `platformdirs` to store the database in the OS‑specific user data directory.
+
+- Default DB file: `breathcheck.db`
+- If `DB_PATH` is **relative**, it is stored inside the app data directory.
+- If `DB_PATH` is **absolute**, it is used as‑is.
+
+Typical locations (may vary by OS/user):
+- Linux: `~/.local/share/BreathCheck/BreathCheck/breathcheck.db`
+- macOS: `~/Library/Application Support/BreathCheck/BreathCheck/breathcheck.db`
+- Windows: `%APPDATA%\\BreathCheck\\BreathCheck\\breathcheck.db`
+
+---
+
+## Configuration (.env)
+
+Create `.env` from `.env.example`.
+
+Common settings:
+- `APP_NAME=BreathCheck`
+- `DEBUG=false`
+- `DB_PATH=breathcheck.db`
+- `AI_API_KEY=...` *(optional; can also be stored in keyring)*
+- `AI_MODEL=gpt-5.2`
+
+---
+
+## Assets (images/audio)
+
+### App logo
+- `src/anxiety_app/ui/resources/app_logo.png`
+
+### Module media (images + audio)
+Each module has its own folder:
+```
+src/anxiety_app/ui/resources/modules/module_1/
+  images/step_1/...
+  audio/step_1/...
+```
+If a file doesn’t exist, BreathCheck shows a placeholder.
+
+### Tool images
+```
+src/anxiety_app/ui/resources/tools/
+  grounding.png
+  thought_log.png
+  worry_time.png
+  safe_place.png
+```
+
+### Milestone badges
+```
+src/anxiety_app/ui/resources/milestones/
+  1.png ... 8.png
+```
+
+---
+
+## Keyboard shortcuts
+
+- Ctrl+1 — Home  
+- Ctrl+2 — Learn  
+- Ctrl+3 — Track  
+- Ctrl+4 — Insights  
+- Ctrl+5 — Progress  
+- Ctrl+6 — Tools  
+- Ctrl+7 — Settings
+
+---
+
+## Tech stack
+
+- Python 3.11+
+- PyQt5
+- SQLite + SQLAlchemy ORM
+- python‑dotenv
+- keyring
+- pytest, mypy, ruff, black
+
+---
+
+## Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+```
+
+Create a local `.env` from `.env.example`.
+
+---
+
+## Run
+
+```bash
+python -m anxiety_app.main
+```
+
+---
+
+## Tests
+
+```bash
+pytest
+```
+
+---
+
+## Notes
+
+- AI insights/feedback are optional. If no API key is configured, the app returns stubbed insights.
+- All data stays local unless you choose to generate AI insights or tool feedback.

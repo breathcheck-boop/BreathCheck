@@ -1,0 +1,17 @@
+# Build outputs
+build/
+dist/
+
+# Environment and local secrets
+.env
+.venv/
+
+# Databases and logs
+*.db
+*.sqlite
+*.log
+
+# Python cache
+__pycache__/
+pycache/
+*.py[cod]
