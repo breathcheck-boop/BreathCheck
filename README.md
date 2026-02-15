@@ -24,33 +24,40 @@ BreathCheck currently presents **6 sequential modules**:
 3. Our Thoughts
 4. Changing Thoughts
 5. Coping with Worry
-6. Lifestyle Factors & Relapse Prevention
+6. Lifestyle Factors
 
 Rules:
 - Module 1 is available first.
 - Next module unlocks only after previous module is complete.
 - Locked modules remain visible; actions are disabled.
-- Each module card has `Overview` and `Open`.
+- Each module card has `Overview`, `Sources`, and `Open`/`Resume`.
 
-### Module 1 status
-Module 1 is fully implemented as a **10-step wizard** with:
+### Learn Module Status
+Modules 1-6 are implemented as **10-step wizards** with:
 - Persistent save per step
 - Resume from `last_step_index`
 - Overview page showing saved inputs
 - Left media panel with image/audio placeholders + quote
 - Step progress and validation
+- Guide/Examples notes under user inputs
+- Step 10 completion parity (summary cards + final check-out slider(s) + optional one-sentence commitment)
 
 Module 1 covers:
-- Welcome + orientation
-- Anxiety basics (Thoughts/Body/Actions)
-- Fight-or-flight body signals
-- Worry cycle mapping
-- Helpful concern vs unhelpful worry quiz
-- Domains and patterns
-- Values -> goals -> tiny habits
-- Baseline ratings
-- Micro-plan
-- Completion
+- Orientation/baseline and anxiety pattern mapping
+- Fight-or-flight body signals and most-bothersome symptoms
+- Worry-cycle and trigger pattern tracking
+- Avoidance/safety behavior costs and support planning
+- Personal summary plan
+- Completion step with summary cards, final anxiety/tension check-out, and optional commitment
+
+Module 6 covers:
+- Sleep snapshot and sleep action planning
+- Food regularity and weekly nutrition upgrade
+- Caffeine trigger boundary planning
+- Movement baseline and realistic minimum plan
+- Mindfulness plan and schedule
+- Setback If-Then maintenance plan
+- Completion summary cards, anxiety-now check-out, maintain-confidence check-out, and commitment
 
 ## Tools
 
@@ -108,7 +115,6 @@ Settings currently includes:
 - Reset progress
 - Delete account
 - Delete all data
-- Theme (Light/Dark)
 - Comfort mode toggle
 - Font size
 - Reminder preference
@@ -129,6 +135,7 @@ Notes:
 
 - Main window uses screen available geometry on startup.
 - Window resizing is disabled (fixed to available screen size).
+- Dropdown fields (combo boxes) open with a single click app-wide.
 - UI is optimized for no animation transitions and responsive interactions.
 
 ## Tech Stack
@@ -165,7 +172,7 @@ or with local venv explicitly:
   - `CODEBASE_EXPLAINER.txt`
 - User-facing app guide:
   - `APP_USER_GUIDE.txt`
-- Module 1 authored content reference:
-  - `module_1_content.txt`
+- Modules 1-6 authored content reference:
+  - `modules_1_to_6_content.txt`
 - Milestone text reference:
   - `milestones.txt`

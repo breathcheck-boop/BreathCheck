@@ -3,161 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BreathCheck Showcase</title>
-  <meta name="description" content="BreathCheck app showcase: local-first anxiety self-help with guided modules, practical tools, and progress tracking." />
-  <link rel="stylesheet" href="styles.css?v=20260214" />
+  <title>BreathCheck README</title>
+  <meta
+    name="description"
+    content="BreathCheck desktop app overview, download instructions, and quick start guide."
+  />
+  <link rel="stylesheet" href="styles.css?v=20260216-readme" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <div class="brand">
-        <img src="./assets/logo.png?v=20260214" alt="BreathCheck logo" class="brand-logo" />
-        <div>
-          <h1>BreathCheck</h1>
-          <p class="muted">A local-first CBT-inspired anxiety support app</p>
-        </div>
-      </div>
-      <nav class="topnav">
-        <a href="#overview">Overview</a>
-        <a href="#modules">Modules</a>
-        <a href="#tools">Tools</a>
-        <a href="#privacy">Privacy</a>
-      </nav>
-    </div>
-  </header>
+  <main class="readme-shell">
+    <article class="readme-card">
+      <header class="readme-header">
+        <h1>BreathCheck</h1>
+        <p class="tagline">Local-first anxiety support desktop app</p>
+        <a
+          class="download-button"
+          data-download-link
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download BreathCheck
+        </a>
+      </header>
 
-  <main>
-    <section class="hero" id="overview">
-      <div class="container hero-grid">
-        <article class="card hero-copy">
-          <p class="pill">Built with care for calm daily use</p>
-          <h2>Steady support for anxiety, one step at a time</h2>
-          <p>
-            BreathCheck helps users understand anxiety patterns, practice practical coping skills,
-            and track progress over time. The app is designed for clarity, privacy, and consistent use.
-          </p>
-          <div class="hero-tags">
-            <span>Local-first data</span>
-            <span>Guided module flow</span>
-            <span>Tool usage history</span>
-            <span>Progress milestones</span>
-          </div>
-          <a
-            id="downloadLink"
-            class="download-btn"
-            href="https://github.com/breathcheck-boop/BreathCheck"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download on GitHub
+      <section>
+        <h2>About</h2>
+        <p>
+          BreathCheck is a structured self-help app for anxiety management. It combines guided
+          learning modules, practical coping tools, progress tracking, and local data storage.
+        </p>
+      </section>
+
+      <section>
+        <h2>Download</h2>
+        <p>
+          Download is simple: click the <strong>Download BreathCheck</strong> button and you will
+          be redirected to the official download page where the app files are hosted.
+        </p>
+        <ol>
+          <li>Click the download button.</li>
+          <li>Download the latest package from the redirected page.</li>
+          <li>Extract the files.</li>
+          <li>Run the app. No extra setup is required after extraction.</li>
+        </ol>
+        <p class="muted-note">
+          Download target:
+          <a data-download-link href="#" target="_blank" rel="noopener noreferrer">
+            official file host
           </a>
-        </article>
+        </p>
+      </section>
 
-        <article class="card showcase-panel">
-          <h3>Module 1 Media Preview</h3>
-          <p class="muted">Step images currently bundled in the app resources.</p>
-          <div class="carousel" id="carousel">
-            <button class="carousel-btn" id="prevBtn" aria-label="Previous slide">&lt;</button>
-            <img id="slideImage" src="./assets/module1/step1.png?v=20260214" alt="Module 1 preview" />
-            <button class="carousel-btn" id="nextBtn" aria-label="Next slide">&gt;</button>
-          </div>
-          <div class="dots" id="dots"></div>
-          <p id="slideCaption" class="caption">Step 1: Welcome + Orientation</p>
-        </article>
-      </div>
-    </section>
+      <section>
+        <h2>What You Get</h2>
+        <ul>
+          <li>6 guided learning modules (step-by-step).</li>
+          <li>BreathCheck breathing tool and Thought Log tool.</li>
+          <li>Progress summaries, streaks, and milestones.</li>
+          <li>Support contacts/resources section.</li>
+          <li>Local-first storage with encrypted sensitive fields.</li>
+        </ul>
+      </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Core Navigation</h2>
-        <div class="grid cols-5 compact">
-          <article class="card mini"><h3>Learn</h3><p>Sequential CBT module program.</p></article>
-          <article class="card mini"><h3>Tools</h3><p>BreathCheck and Thought Log tools.</p></article>
-          <article class="card mini"><h3>Progress</h3><p>Completion, streaks, milestones.</p></article>
-          <article class="card mini"><h3>Support</h3><p>Emergency steps and saved resources.</p></article>
-          <article class="card mini"><h3>Settings</h3><p>Security, appearance, export, reset.</p></article>
-        </div>
-      </div>
-    </section>
+      <section>
+        <h2>Quick Start</h2>
+        <ol>
+          <li>Open the app after extracting the download package.</li>
+          <li>Create a master password on first run.</li>
+          <li>Complete onboarding once.</li>
+          <li>Start with Module 1 in the Learn tab.</li>
+        </ol>
+      </section>
 
-    <section class="section muted-bg" id="modules">
-      <div class="container">
-        <h2 class="section-title">6-Module Program</h2>
-        <p class="muted">Modules unlock sequentially to keep progression clear and structured.</p>
-        <div class="grid cols-3">
-          <article class="card module"><h3>1. Understanding Anxiety</h3><p>Anxiety basics, body signals, worry cycle, values, baseline, micro-plan.</p></article>
-          <article class="card module"><h3>2. Relaxation</h3><p>Body calming techniques and practical breathing routines.</p></article>
-          <article class="card module"><h3>3. Our Thoughts</h3><p>Identify common anxious thought patterns and assumptions.</p></article>
-          <article class="card module"><h3>4. Changing Thoughts</h3><p>Practice balanced thinking and cognitive reframing.</p></article>
-          <article class="card module"><h3>5. Coping with Worry</h3><p>Differentiate problem-solving from worry loops.</p></article>
-          <article class="card module"><h3>6. Lifestyle & Relapse Prevention</h3><p>Build maintenance habits and long-term coping consistency.</p></article>
-        </div>
-      </div>
-    </section>
+      <section>
+        <h2>Safety Note</h2>
+        <p>
+          BreathCheck is for self-help support and is not a replacement for professional mental
+          health care or emergency services.
+        </p>
+      </section>
 
-    <section class="section" id="tools">
-      <div class="container">
-        <h2 class="section-title">Practical Tools</h2>
-        <div class="grid cols-2">
-          <article class="card tool">
-            <img src="./assets/tools/grounding.png?v=20260214" alt="BreathCheck tool visual" class="tool-image" />
-            <h3>BreathCheck Tool</h3>
-            <p>Adjust pace and duration, run sessions, and log usage details for progress tracking.</p>
-            <ul>
-              <li>Pace presets</li>
-              <li>Duration options</li>
-              <li>Session history</li>
-            </ul>
-          </article>
-          <article class="card tool">
-            <img src="./assets/tools/thought_log.png?v=20260214" alt="Thought log visual" class="tool-image" />
-            <h3>Thought Log</h3>
-            <p>Capture situation, thought, emotion intensity, balanced thought, and re-rate.</p>
-            <ul>
-              <li>Structured entry workflow</li>
-              <li>Saved history with details</li>
-              <li>Streaming feedback with fallback</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section muted-bg">
-      <div class="container">
-        <h2 class="section-title">Progress and Milestones</h2>
-        <div class="grid cols-4">
-          <article class="card badge"><img src="./assets/milestones/1.png?v=20260214" alt="Milestone 1" /><p>First streak</p></article>
-          <article class="card badge"><img src="./assets/milestones/2.png?v=20260214" alt="Milestone 2" /><p>Module completion</p></article>
-          <article class="card badge"><img src="./assets/milestones/5.png?v=20260214" alt="Milestone 5" /><p>Values anchor</p></article>
-          <article class="card badge"><img src="./assets/milestones/8.png?v=20260214" alt="Milestone 8" /><p>Consistency growth</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="privacy">
-      <div class="container">
-        <h2 class="section-title">Privacy and Safety</h2>
-        <div class="grid cols-2">
-          <article class="card">
-            <h3>Local-first by default</h3>
-            <p>BreathCheck stores data on the user device and uses encrypted fields for sensitive entries.</p>
-          </article>
-          <article class="card">
-            <h3>Supportive, not emergency care</h3>
-            <p>The app is designed for self-help and skills practice. Users should seek professional help when needed.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      <footer class="readme-footer">
+        <a
+          class="download-button"
+          data-download-link
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download Now
+        </a>
+      </footer>
+    </article>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>BreathCheck 2026, Built with Python and Qt</p>
-    </div>
-  </footer>
-
-  <script src="script.js?v=20260214"></script>
+  <script src="script.js?v=20260216-readme"></script>
 </body>
 </html>
