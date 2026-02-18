@@ -1,4 +1,4 @@
-const DOWNLOAD_URL = "https://github.com/breathcheck-boop/BreathCheck/raw/main/docs/BreathCheck.zip";
+const DOWNLOAD_URL = "./BreathCheck.zip";
 const ASSET_VERSION = "v=20260216";
 
 const slides = [
@@ -90,4 +90,5 @@ if (slideImage && slideCaption && prevBtn && nextBtn && dotsHost) {
     autoRotate = setInterval(() => render(current + 1), 5500);
   }
 }
+
 
