@@ -4,11 +4,9 @@ BreathCheck is a local-first desktop app for anxiety self-help. It combines guid
 
 ## Download and Install
 
-The download process is simple:
 1. Click Download Files on the project webpage.
-2. Download starts for the ZIP package.
-3. Extract the files.
-4. Open the app executable. It is ready to use after extraction.
+2. Extract the downloaded files.
+3. Open the app executable and start using BreathCheck.
 
 ## What the App Includes
 
@@ -55,6 +53,7 @@ Each module is step-based, saves progress automatically, and unlocks in sequence
 - Data is stored locally on your device.
 - Sensitive text fields are encrypted before storage.
 - BreathCheck is a self-help support app and not a replacement for emergency or professional mental health care.
+
 
 
 
