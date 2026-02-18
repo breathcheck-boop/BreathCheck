@@ -1,4 +1,4 @@
-const DOWNLOAD_URL = "https://github.com/breathcheck-boop/BreathCheck/releases/latest";
+const DOWNLOAD_URL = "./BreathCheck.zip";
 const ASSET_VERSION = "v=20260216";
 
 const slides = [
@@ -34,6 +34,7 @@ const slides = [
 
 document.querySelectorAll("[data-download-link]").forEach((link) => {
   link.href = DOWNLOAD_URL;
+  link.setAttribute("download", "BreathCheck.zip");
 });
 
 const slideImage = document.getElementById("slideImage");

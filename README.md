@@ -50,11 +50,11 @@ Each module is step-based, saves progress automatically, and unlocks in sequence
 - Delete account / delete all data
 - Comfort mode
 - Font size
-- Reminder preference
-- Data export (JSON/CSV)
 
 ## Privacy and Safety
 
 - Data is stored locally on your device.
 - Sensitive text fields are encrypted before storage.
 - BreathCheck is a self-help support app and not a replacement for emergency or professional mental health care.
+
+
