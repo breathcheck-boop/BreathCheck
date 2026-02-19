@@ -62,26 +62,63 @@
     <section class="section muted-bg" id="download">
       <div class="container">
         <h2 class="section-title">Download and Install</h2>
-        <article class="card">
-          <p>
-            Download is simple:
-          </p>
-          <ol class="download-steps">
-            <li>Click <strong>Download Files</strong>.</li>
-            <li>Extract the downloaded files.</li>
-            <li>Open the app executable and start using BreathCheck.</li>
-          </ol>
-          <p class="callout">
-            No additional setup is required after extraction.
-          </p>
-          <a
-            class="download-btn"
-            data-download-link
-            href="./BreathCheck.zip" download="BreathCheck.zip"
-            rel="noopener noreferrer"
-          >
-            Download Files
-          </a>
+        <div class="grid cols-2">
+          <article class="card">
+            <h3>Desktop App (Windows)</h3>
+            <p>
+              Best for offline use on one computer. Core modules, tools, and progress tracking
+              run locally after installation.
+            </p>
+            <ol class="download-steps">
+              <li>Click <strong>Download Desktop Files</strong>.</li>
+              <li>After download, extract the package.</li>
+              <li>Open the app executable and start using BreathCheck.</li>
+            </ol>
+            <p class="callout">
+              Core desktop usage does not require internet after install. Online features (for example,
+              AI-generated insights) still need internet access.
+            </p>
+            <a
+              class="download-btn"
+              data-download-link
+              href="#"
+              rel="noopener noreferrer"
+            >
+              Download Desktop Files
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Web App (Phone + Any Device)</h3>
+            <p>
+              Best for quick access from anywhere. Open it on phones, tablets, or computers without installation.
+            </p>
+            <ul class="download-steps">
+              <li>Open the live link in any modern browser.</li>
+              <li>No extraction or installer is needed.</li>
+              <li>Works across different networks and devices.</li>
+            </ul>
+            <p class="callout">
+              Web access requires internet. Data is saved per browser/device unless cloud sync is added.
+            </p>
+            <a
+              class="download-btn"
+              href="https://breathcheck-web.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Web App
+            </a>
+          </article>
+        </div>
+
+        <article class="card download-compare-card">
+          <h3>Desktop vs Web at a Glance</h3>
+          <ul class="download-steps">
+            <li><strong>Internet requirement:</strong> Desktop core features can run offline after install; web app needs internet to open.</li>
+            <li><strong>Device reach:</strong> Desktop is for one installed machine; web app can be opened on phones and other devices.</li>
+            <li><strong>Setup effort:</strong> Desktop needs download/extract; web app is instant via URL.</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -180,7 +217,6 @@
   <script src="script.js?v=20260218-downloadfix"></script>
 </body>
 </html>
-
 
 
 

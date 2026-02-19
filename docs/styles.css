@@ -330,6 +330,10 @@ img {
   color: var(--text-main);
 }
 
+.download-compare-card {
+  margin-top: 14px;
+}
+
 .footer {
   border-top: 1px solid var(--border);
   padding: 18px 0 28px;
